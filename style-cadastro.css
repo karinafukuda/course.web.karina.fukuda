@@ -1,0 +1,52 @@
+/*
+https://www.palettable.io/32394C-2B3B52-FFFFCC-F8E8A3-2E2B1E
+*/
+
+html , body, form , input  {
+    font-family: 'Lexend', sans-serif;
+    background-color: none;
+    font-size: 1em;
+}
+
+h1, h2, h3 {
+    text-transform: uppercase;
+    text-shadow: 0.5px 0.5px 1px #2b3b52;
+}
+
+h1 {
+    color: #2e2b1e;
+}
+
+h2, h3 {
+    color: #32394c;
+}
+
+p , form {
+    font-size: 1em;
+    text-align: left;
+    letter-spacing: 0.25px;
+    font-style: normal;
+    color: #2b3b52;
+}
+
+.buttons {
+ 
+    text-decoration: none;
+    text-transform: uppercase;
+    font-variant: small;
+    font-style: normal;
+    font-weight: 600;
+    color: #2e2b1e;
+
+}
+
+#txtEnviar {
+    font-weight: bold;
+    color: #2e2b1e;
+}
+
+#acpButton , #wppButton  {
+    font-weight: 400;
+    font-size: 0.90em;
+    color: #2e2b1e;
+}
