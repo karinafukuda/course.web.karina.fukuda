@@ -22,7 +22,6 @@ h2, h3 {
 }
 
 p , form {
-    font-size: 1em;
     text-align: left;
     letter-spacing: 0.25px;
     font-style: normal;
@@ -30,7 +29,6 @@ p , form {
 }
 
 .buttons {
- 
     text-decoration: none;
     text-transform: uppercase;
     font-variant: small;

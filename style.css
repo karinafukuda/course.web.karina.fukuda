@@ -23,11 +23,10 @@ h2,h3,h4,h5 {
 
 
 p {
-        text-align: left;
-        letter-spacing: 0.25px;
-        font-style: normal;
-        color: #2b3b52;
-
+    text-align: left;
+    letter-spacing: 0.25px;
+    font-style: normal;
+    color: #2b3b52;
 }
 
 .buttons {
