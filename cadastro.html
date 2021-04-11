@@ -9,143 +9,155 @@
     <title> Animes BRA - Cadastro </title>
     <link rel="icon" href="img/ghost.png" />
     <link rel="stylesheet" href="style-cadastro.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header>
         <div class="titulo-page-cadastro">
             <h1> &#x2728; seja um membro do clã &#x2728; </h1>
+            <hr />
+            <nav>
+                <div class="botao-home">
+                    <button>
+                        <a href="index.html" title="Home"><span class="buttons"> Home </span> </a>
+                    </button>
+                </div>
+            </nav>
         </div>
-        <nav>
-            <div class="botao-home">
-                <button>
-                    <a href="index.html" title="Home"><span class="buttons"> Home </span> </a>
-                </button>
-            </div>
-        </nav>
     </header>
-<hr />
 
-<main>
-    <section class="descricao-principal-cad">
-        <article>
-            <p>Para receber notícias quentinhas do mundo do dos animes, completa o seu cadastro abaixo e receba as
-                informações
-                em primeira mão sobre lançamentos, mangás, ficha de personagens, além de ilustrações exclusivas e
-                wallpapers.
-            </p>
-            <br />
-            <div class="video-topo">
-                <video controls autoplay width="700" weight="">
-                    <source src="media/one-piece.mp4" type="video/mp4" />
-                    Ops! Parece que seu navegador não suporta esta mídia.
-                </video>
+
+    <main>
+        <section class="descricao-principal-cad">
+            <article>
+                <p>Para receber notícias quentinhas do mundo do dos animes, completa o seu cadastro abaixo e receba as
+                    informações
+                    em primeira mão sobre lançamentos, mangás, ficha de personagens, além de ilustrações exclusivas e
+                    wallpapers.
+                </p>
+                <br />
+                <div class="video-topo">
+                    <video controls autoplay width="700" weight="">
+                        <source src="media/one-piece.mp4" type="video/mp4" />
+                        Ops! Parece que seu navegador não suporta esta mídia.
+                    </video>
+                </div>
+                <hr />
+            </article>
+        </section>
+
+        <section>
+            <article>
+                <fieldset>
+                    <div class="form">
+                        <div class="cadastro">
+                            <h2> &#x1F31F; cadastro </h2>
+                        </div>
+                        <br />
+                        <div class="form-cadastro">
+                            <form>
+                                <label for="txtNome">Nome completo: </label>
+                                <input type="text" id="txtNome" placeholder="Digite seu nome aqui" size="50" />
+                                <br />
+                                <br />
+
+                                <label for="dtDataNascimento">Data nascimento: </label>
+                                <input type="date" id="dtDataMascimento" max="2010-01-01" min="1956-01-01" />
+                                <br />
+                                <br />
+
+                                <label for="txtEmail">E-mail: </label>
+                                <input type="email" id="txtEmail" autocomplete="on" placeholder="Ex: anime@gmail.com"
+                                    size="50" />
+                                <br />
+                                <br />
+
+                                <label for="txtTelefone">Telefone: </label>
+                                <input type="tel" id="txtTelefone" maxlength="11" placeholder="Ex: 11999988888" />
+                                <br />
+                                <br />
+
+                                <label for="acptButton">Aceita receber nossas notícias por e-mail ? </label>
+                                <br />
+                                <br />
+                                <div class="form-buttom">
+                                    <input type="button" id="acpButton" value="Sim, dattebayo!" />
+                                    <input type="button" id="acpButton" value="Nani? Deixa para a próxima." />
+                                </div>
+                                <br />
+                                <br />
+
+                                <label for="wppButton">Aceita receber nossas notícias via WhatsApp ? </label>
+                                <br />
+                                <br />
+                                <div class="form-buttom">
+                                    <input type="button" id="wppButton" value="Sim, dattebasa!" />
+                                    <input type="button" id="wppButton" value="Nope..." />
+                                </div>
+                                <br />
+
+                            </form>
+                        </div>
+                    </div>
+                </fieldset>
+            </article>
+        </section>
+
+        <section>
+            <article>
+                <fieldset>
+                    <div class="lembrete">
+                        <div class="descricao-lembrete">
+                            <p>Seus dados estarão protegidos e tem finalidade exclusiva de cadastro para envios de
+                                notícias
+                                via
+                                e-mail e whatsapp,em conformidade com a Lei nº 13.709 – Lei Geral de Proteção de Dados
+                                Pessoais
+                                (LGPD).<br /> Você está de acordo?</p>
+                        </div>
+                        <div class="form-lembrete">
+                            <form>
+                                <input type="radio" name="OpcaoSim" />
+                                <label for="OpcaoSim">Sim</label>
+
+                                <input type="radio" name="OpcaoSim" />
+                                <label for="OpcaoNao">Não</label>
+                                <br />
+                                <br />
+
+                                <label for="txtEnviar">Para confirmar seu cadastro clique em enviar e
+                                    bem-vindes a bordo! &#127841;
+                                </label>
+                                <br />
+                                <br />
+                                <input type="submit" id="txtEnviar" />
+                            </form>
+                        </div>
+                </fieldset>
+                <br />
+            </article>
+        </section>
+    </main>
+
+    <footer>
+
+        <nav>
+            <div class="button-return">
+                <h4> Quer ler mais notícias ?</h4>
+                <p class="texto-footer">Clique em
+                    <button>
+                        <a href="index.html" title=" Home "><span class="buttons">&#x1F365 Voltar &#x1F365</span> </a>
+                    </button>
+                </p>
+                <p class="texto-footer">Essa página foi 100% inspirada no Site Aficionados para fins de prática HTML no
+                    Desenvolvimento Web.</p>
             </div>
             <hr />
-        </article>
-    </section>
-
-    <section>
-        <article>
-            <fieldset>
-                <div class="form">
-                    <div class="titulo-cadastro">
-                        <h2> &#x1F31F; cadastro </h2>
-                    </div>
-                    <br />
-                    <div class="form-cadastro">
-                        <form>
-                            <label for="txtNome">Nome completo: </label>
-                            <input type="text" id="txtNome" autofocus placeholder="Digite seu nome aqui" size="50" />
-                            <br />
-                            <br />
-
-                            <label for="dtDataNascimento">Data nascimento: </label>
-                            <input type="date" id="dtDataMascimento" max="2010-01-01" min="1956-01-01" />
-                            <br />
-                            <br />
-
-                            <label for="txtEmail">E-mail: </label>
-                            <input type="email" id="txtEmail" autocomplete="on" placeholder="Ex: anime@gmail.com" size="50" />
-                            <br />
-                            <br />
-
-                            <label for="txtTelefone">Telefone: </label>
-                            <input type="tel" id="txtTelefone" maxlength="11" placeholder="Ex: 11999988888" />
-                            <br />
-                            <br />
-
-                            <label for="acptButton">Aceita receber nossas notícias por e-mail ? </label>
-                            <br />
-                            <br />
-                            <div class="form-buttom">
-                                <input type="button" id="acpButton" value="Sim, dattebayo!" />
-                                <input type="button" id="acpButton" value="Nani? Deixa para a próxima." />
-                            </div>
-                            <br />
-                            <br />
-
-                            <label for="wppButton">Aceita receber nossas notícias via WhatsApp ? </label>
-                            <br />
-                            <br />
-                            <div class="form-buttom">
-                                <input type="button" id="wppButton" value="Sim, dattebasa!" />
-                                <input type="button" id="wppButton" value="Nope..." />
-                            </div>
-                            <br />
-                            <br />
-
-                            <label for="txtEnviar">&#127841; Para confirmar seu cadastro clique em enviar e
-                                bem-vindes a bordo!
-                            </label>
-                            <br />
-                            <br />
-                            <input type="submit" id="txtEnviar"/>
-                        </form>
-                    </div>
-                </div>
-            </fieldset>
-        </article>
-    </section>
-
-    <hr />
-
-    <section>
-        <article>
-            <fieldset>
-                <div class="lembrete">
-                    <div class="titulo-lembrete">
-                        <h3> &#128400 lembrete </h3>
-                    </div>
-                    <div class="descricao-lembrete">
-                        <p>Seus dados estarão protegidos e tem finalidade exclusiva de cadastro para envios de notícias
-                            via
-                            e-mail e whatsapp,em conformidade com a Lei nº 13.709 – Lei Geral de Proteção de Dados
-                            Pessoais
-                            (LGPD). Você está de acordo?</p>
-                    </div>
-                    <div class="form-lembrete">
-                        <form>
-                            <input type="radio" name="OpcaoSim" />
-                            <label for="OpcaoSim">Sim</label>
-
-                            <input type="radio" name="OpcaoSim" />
-                            <label for="OpcaoNao">Não</label>
-                        </form>
-                    </div>
-            </fieldset>
-            <br />
-        </article>
-    </section>
-</main>
-
-<footer>
-    <nav>
-        <div class="button-return">
-            <button>
-                <a href="index.html" title=" Home "><span class="buttons">Retornar à página inicial </span> </a>
-            </button>
-        </div>
-    </nav>
-</footer>
+        </nav>
+    </footer>
 </body>
+
 </html>
