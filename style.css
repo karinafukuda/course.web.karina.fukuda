@@ -1,32 +1,57 @@
-/*
-https://www.palettable.io/32394C-2B3B52-FFFFCC-F8E8A3-2E2B1E
+/*Cores:
+#dc8651 - Laranja Escuro
+#e3aa59 - Laranja Médio
+#f2f4df - Creme
+#53699b - Azul Médio
+#181630 - Azul Escuro
 */
 
 html , body, ul {
-    font-family: 'Lexend', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
     background-color: none;
     font-size: 1em;
+    background-color: #f2f4df;
 }
 
-h1, h2, h3, h4, h5 {
+.titulo {
+    background-color: #53699b ;
+}
+
+h1, h3 {
     text-transform: uppercase;
-    text-shadow: 0.5px 0.5px 1px #2b3b52;
+}
+
+h2 {
+    text-transform: unset;
 }
 
 h1 {
-    color: #2e2b1e;
+    color: #f2f4df;
+    font-size: 4em;
+    text-align: center;
 }
 
-h2,h3,h4,h5 {
-    color: #32394c;
+h2 {
+    color: #e3aa59;
+    font-size: 2em;
+    font-weight: 300;
+    text-indent: 1em;
 }
 
+h3 {
+    color: #53699b;
+}
+
+h4 {
+    color: #181630;
+    font-size: 1.5em;   
+}
 
 p {
     text-align: left;
     letter-spacing: 0.25px;
     font-style: normal;
-    color: #2b3b52;
+    color: #181630;
 }
 
 .buttons {
@@ -35,14 +60,41 @@ p {
     font-variant: small;
     font-style: normal;
     font-weight: 600;
-    color: #2e2b1e;
-
+    color: #181630;
 }
 
-.titulo-li, th  {
-   
+.titulo-li, th  {  
     text-decoration: none;
     font-style: normal;
+    font-size: 1.25em;
     font-weight: bold;
-    color: #2e2b1e;
+    color: #181630;
+}
+
+tr {
+    font-size: 1em;
+}
+
+.titulo-h2 {
+    color:#f2f4df; 
+    font-weight: 500;
+}
+
+.descricao-h2 {
+    background-color: #dc8651;
+}
+
+.tabela-personagens {
+    background-color: #f2f4df;
+}
+
+footer {
+    background-color: #53699b;
+    text-align: center;
+}
+
+.texto-footer {
+    color: #f2f4df;
+    font-size: 1.1em;
+    text-align: center;
 }
