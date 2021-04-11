@@ -1,31 +1,49 @@
-/*
-https://www.palettable.io/32394C-2B3B52-FFFFCC-F8E8A3-2E2B1E
+/*Cores:
+#dc8651 - Laranja Escuro
+#e3aa59 - Laranja Médio
+#f2f4df - Creme
+#53699b - Azul Médio
+#181630 - Azul Escuro
 */
 
-html , body, form , input  {
-    font-family: 'Lexend', sans-serif;
-    background-color: none;
+html , body, form , th { 
+    font-family: 'Noto Sans JP', sans-serif;
     font-size: 1em;
+    background-color: #f2f4df;
 }
 
-h1, h2, h3 {
-    text-transform: uppercase;
-    text-shadow: 0.5px 0.5px 1px #2b3b52;
+.titulo-page-cadastro {
+    background-color: #53699b;
 }
+
+h1, h2, h3, h4 {
+    text-transform: uppercase;
+    text-shadow: 0.5px 0.5px 1px #181630;
+} 
 
 h1 {
-    color: #2e2b1e;
+    color: #f2f4df;
+    font-size: 4em;
+    text-align: center;
+    margin: 0;
 }
 
+
 h2, h3 {
-    color: #32394c;
+    font-size: 2em;
+    color: #53699b;
+}
+
+h4 {
+    font-size: 1.5em;
+    color: #181630;
 }
 
 p , form {
     text-align: left;
     letter-spacing: 0.25px;
     font-style: normal;
-    color: #2b3b52;
+    color: #181630;
 }
 
 .buttons {
@@ -34,17 +52,28 @@ p , form {
     font-variant: small;
     font-style: normal;
     font-weight: 600;
-    color: #2e2b1e;
-
+    color: #181630;
 }
 
 #txtEnviar {
     font-weight: bold;
-    color: #2e2b1e;
+    font-size: 1em;
+    color: #181630;
 }
 
 #acpButton , #wppButton  {
     font-weight: 400;
     font-size: 0.90em;
-    color: #2e2b1e;
+    color: #181630;
+}
+
+footer {
+    background-color: #53699b;
+    text-align: center;
+}
+
+.texto-footer {
+    color: #f2f4df;
+    font-size: 1.1em;
+    text-align: center;
 }
