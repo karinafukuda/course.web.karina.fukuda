@@ -13,7 +13,6 @@ html , body, ul {
     background-color: none;
     font-size: 1em;
     background-color: #f2f4df;
-    backdrop-filter: blur (1px);
 }
 
 header{
@@ -27,8 +26,7 @@ a {
     text-decoration: none;
 }
 .titulo {
-    background: linear-gradient(0deg, rgba(83,105,155,1) 0%, rgba(24,22,48,1) 100%);
-   
+    background: linear-gradient(0deg, rgba(83,105,155,1) 0%, rgba(24,22,48,1) 100%);  
 }
 
 h1, h3 {
@@ -50,6 +48,7 @@ h2 {
     font-size: 2em;
     font-weight: 300;
     text-indent: 1em;
+    text-align: center;
 }
 
 h3 {
@@ -68,8 +67,6 @@ main {
     background-image: url(img/Naruto-pb.jpg);
 }
 
-
-
 .subtitulo-home {
     text-align: center;
     font-size: 1.25em;
@@ -80,12 +77,10 @@ main {
     margin:  0 33% 0 0 ;
 }
 
-img  {
-    padding: 0 208px;
+img {
+    padding: 0 30%;
     margin-top: 2px;
 }
-
-
 
 p {
     text-align: left;
