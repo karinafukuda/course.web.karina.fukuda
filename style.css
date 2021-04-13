@@ -7,14 +7,28 @@
 */
 
 html , body, ul {
+    margin: 0;
+    padding: 0;
     font-family: 'Noto Sans JP', sans-serif;
     background-color: none;
     font-size: 1em;
     background-color: #f2f4df;
+    backdrop-filter: blur (1px);
 }
 
+header{
+    margin-top: -45px;
+    padding: 0;
+}
+
+a {
+    color: #f2f4df;
+    font-weight: bold;
+    text-decoration: none;
+}
 .titulo {
-    background-color: #53699b ;
+    background: linear-gradient(0deg, rgba(83,105,155,1) 0%, rgba(24,22,48,1) 100%);
+   
 }
 
 h1, h3 {
@@ -32,7 +46,7 @@ h1 {
 }
 
 h2 {
-    color: #e3aa59;
+    color: rgba(227, 170, 89) 0.5 ;
     font-size: 2em;
     font-weight: 300;
     text-indent: 1em;
@@ -47,11 +61,39 @@ h4 {
     font-size: 1.5em;   
 }
 
+main {
+    padding: 0 12%;
+    margin: 0;
+    margin-top: -28px;
+    background-image: url(img/Naruto-pb.jpg);
+}
+
+
+
+.subtitulo-home {
+    text-align: center;
+    font-size: 1.25em;
+    padding: 2px 8px 0 8px;
+}
+
+.img-2{
+    margin:  0 33% 0 0 ;
+}
+
+img  {
+    padding: 0 208px;
+    margin-top: 2px;
+}
+
+
+
 p {
     text-align: left;
     letter-spacing: 0.25px;
     font-style: normal;
     color: #181630;
+    padding: 12px 60px;
+    
 }
 
 .buttons {
@@ -61,6 +103,13 @@ p {
     font-style: normal;
     font-weight: 600;
     color: #181630;
+    padding: 12px;
+    margin: 4px;
+}
+
+.button-cadastro-top {
+    padding: 8px;
+    margin-left: 212px;
 }
 
 .titulo-li, th  {  
@@ -81,7 +130,8 @@ tr {
 }
 
 .descricao-h2 {
-    background-color: #dc8651;
+    background: linear-gradient(58deg, rgba(220,134,81,1) 0%, rgba(227,170,89,1) 100%);
+
 }
 
 .tabela-personagens {
@@ -91,6 +141,8 @@ tr {
 footer {
     background-color: #53699b;
     text-align: center;
+    margin: -24px 0 0 0;
+    padding-bottom: 0;
 }
 
 .texto-footer {

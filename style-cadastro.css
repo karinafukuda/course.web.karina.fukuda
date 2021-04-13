@@ -7,13 +7,15 @@
 */
 
 html , body, form , th { 
+    margin: 0 5%;
+    padding: 0;
     font-family: 'Noto Sans JP', sans-serif;
     font-size: 1em;
     background-color: #f2f4df;
 }
 
 .titulo-page-cadastro {
-    background-color: #53699b;
+    background: linear-gradient(0deg, rgba(83,105,155,0.5) 0%, rgba(24,22,48,0.75) 100%);
 }
 
 h1, h2, h3, h4 {
