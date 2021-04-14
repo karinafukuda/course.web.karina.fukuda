@@ -6,16 +6,25 @@
 #181630 - Azul Escuro
 */
 
-html , body, form , th { 
-    margin: 0 5%;
+html , body, form  { 
+    margin: 0 ;
     padding: 0;
     font-family: 'Noto Sans JP', sans-serif;
     font-size: 1em;
     background-color: #f2f4df;
+    background-image: url(img/Naruto-pb.jpg);
+
 }
 
+header{
+    margin-top: -44px;
+    padding: 0;
+} 
+
 .titulo-page-cadastro {
-    background: linear-gradient(0deg, rgba(83,105,155,0.5) 0%, rgba(24,22,48,0.75) 100%);
+    background: linear-gradient(0deg, rgba(83,105,155,1) 0%, rgba(24,22,48,1) 100%);  
+    margin: 0;
+    padding: 0;
 }
 
 h1, h2, h3, h4 {
@@ -32,7 +41,7 @@ h1 {
 
 h2, h3 {
     font-size: 2em;
-    color: #53699b;
+    color: #181630;
     text-align: center;
 }
 
@@ -41,20 +50,82 @@ h4 {
     color: #181630;
 }
 
+.texto-topo {
+    padding: 4px 20px;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.form {
+    padding: 0 33%;   
+}
+
+.titulo-page-cadastro {
+    margin:0 ;
+    padding: 0 10%;
+}
+
+nav ul{
+    background: linear-gradient(0deg, rgba(83,105,155,1) 0%, rgba(24,22,48,1) 50%); 
+
+}
+
+.lista-topo ul li {
+    text-decoration: none;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    display: inline ;
+    padding-left: 8%; 
+    padding-bottom: 8%;
+    margin-left: 12% ;     
+}
+
+ul {
+    list-style-type: none;  
+}
+
+ul li {
+    color: #53699b;
+}
+
+a:hover {
+    color:#dc8651; 
+    text-decoration:none; 
+    cursor:pointer; 
+}
+
 p , form {
     text-align: left;
     letter-spacing: 0.25px;
     font-style: normal;
     color: #181630;
+    padding: 1rem; 
+    margin: -0.5rem;
+    position: relative;   
 }
 
-.buttons {
+.video {
+    padding: 8px 32.8%;
+    margin: 2px;
+    float: inline-end;
+}
+
+form {
+    background: linear-gradient(15deg, rgba(220,134,81,1) 0%, rgba(227,170,89,0.9) 100%);  
+    display: block; 
+}
+
+
+.button-return button{
     text-decoration: none;
-    text-transform: uppercase;
-    font-variant: small;
-    font-style: normal;
-    font-weight: 600;
+    font-size: 1em;
     color: #181630;
+    padding: 2px;
+    margin: 8px 0 ;  
 }
 
 #txtEnviar {
@@ -69,8 +140,16 @@ p , form {
     color: #181630;
 }
 
+.buttons {
+    text-decoration: none;
+    font: small normal 600 2em;
+    color: #181630;
+    padding: 12px;
+    margin: 4px;
+}
+
 footer {
-    background-color: #53699b;
+    background: linear-gradient(180deg, rgba(83,105,155,1) 50%, rgba(24,22,48,1) 100%); 
     text-align: center;
 }
 

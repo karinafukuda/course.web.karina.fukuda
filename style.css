@@ -15,16 +15,30 @@ html , body, ul {
     background-color: #f2f4df;
 }
 
+
 header{
     margin-top: -45px;
     padding: 0;
+
+}
+
+header nav ul{
+    background: linear-gradient(0deg, rgba(83,105,155,1) 0%, rgba(24,22,48,1) 50%); 
 }
 
 a {
-    color: #f2f4df;
     font-weight: bold;
     text-decoration: none;
+    color:inherit;
+    
 }
+
+a:hover {
+    color:#dc8651; 
+    text-decoration:none; 
+    cursor:pointer; 
+}
+
 .titulo {
     background: linear-gradient(0deg, rgba(83,105,155,1) 0%, rgba(24,22,48,1) 100%);  
 }
@@ -35,12 +49,14 @@ h1, h3 {
 
 h2 {
     text-transform: unset;
+    text-shadow: 2px -2px #181630 ;
 }
 
 h1 {
     color: #f2f4df;
     font-size: 4em;
     text-align: center;
+    text-shadow: 2px -1px #181630 ;
 }
 
 h2 {
@@ -53,6 +69,7 @@ h2 {
 
 h3 {
     color: #53699b;
+    text-shadow: 1px 1px #181630 ;
 }
 
 h4 {
@@ -64,7 +81,7 @@ main {
     padding: 0 12%;
     margin: 0;
     margin-top: -28px;
-    background-image: url(img/Naruto-pb.jpg);
+    background-image: url(img/Naruto-pb.jpg) ;
 }
 
 .subtitulo-home {
@@ -78,8 +95,20 @@ main {
 }
 
 img {
-    padding: 0 30%;
+    display: flex ;
+    padding: 0 28%;
     margin-top: 2px;
+}
+
+.lista-topo ul li {
+    text-decoration: none;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    display: inline ;
+    padding-left: 8%; 
+    padding-bottom: 8%;
+    margin-left: 12% ;     
 }
 
 p {
@@ -91,23 +120,20 @@ p {
     
 }
 
-.buttons {
+.buttons button {
     text-decoration: none;
-    text-transform: uppercase;
-    font-variant: small;
-    font-style: normal;
-    font-weight: 600;
+    font-size: 1.5em;
     color: #181630;
     padding: 12px;
     margin: 4px;
 }
 
 .button-cadastro-top {
-    padding: 8px;
-    margin-left: 212px;
+    padding: 12px;
+    margin-left: 40%;
 }
 
-.titulo-li, th  {  
+.titulo-li, th {  
     text-decoration: none;
     font-style: normal;
     font-size: 1.25em;
@@ -115,8 +141,9 @@ p {
     color: #181630;
 }
 
-tr {
+tr, td {
     font-size: 1em;
+    color: #181630;
 }
 
 .titulo-h2 {
@@ -129,12 +156,20 @@ tr {
 
 }
 
+ul {
+    list-style-type: none;
+}
+
+
 .tabela-personagens {
     background-color: #f2f4df;
+    display: table;
+    margin-left: 33%;
+    padding: 8px;
 }
 
 footer {
-    background-color: #53699b;
+    background: linear-gradient(180deg, rgba(83,105,155,1) 50%, rgba(24,22,48,1) 100%); 
     text-align: center;
     margin: -24px 0 0 0;
     padding-bottom: 0;

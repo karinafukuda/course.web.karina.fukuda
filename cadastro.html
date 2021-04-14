@@ -20,13 +20,25 @@
     <header>
         <div class="titulo-page-cadastro">
             <h1> &#x2728; seja um membro do clã &#x2728; </h1>
-            <hr />
-            <nav>
-                <div class="botao-home">
+            <div class="lista-top"></div>
+            <nav class="lista-topo"> 
+                <ul>
+                    <li>
+                        <a href="index.html"> Notícias </span> </a>
+                    </li>
+                    <li>
+                        <a href="#">Lançamentos</a>
+                    </li>
+                    <li>
+                        <a href="#">Eventos</a>
+                    </li>
+                    
+                </ul>
+                <!-- <div class="button-return">
                     <button>
                         <a href="index.html" title="Home"><span class="buttons"> Home </span> </a>
                     </button>
-                </div>
+                </div> -->
             </nav>
         </div>
     </header>
@@ -34,32 +46,28 @@
     <main>
         <section class="descricao-principal-cad">
             <article>
-                <p>Para receber notícias quentinhas do mundo do dos animes, completa o seu cadastro abaixo e receba as
-                    informações
-                    em primeira mão sobre lançamentos, mangás, ficha de personagens, além de ilustrações exclusivas e
-                    wallpapers.
-                </p>
-                <br />
-                <div class="video-topo">
-                    <video controls autoplay width="700" weight="">
-                        <source src="media/one-piece.mp4" type="video/mp4" />
-                        Ops! Parece que seu navegador não suporta esta mídia.
-                    </video>
-                </div>
-                <hr />
+
+            <div class="background">
+            <div class="video">
+                <video controls autoplay width="650" weight="">
+                    <source src="media/one-piece.mp4" type="video/mp4" />
+                    Ops! Parece que seu navegador não suporta esta mídia.
+                </video>
+            </div>
+
             </article>
         </section>
 
         <section>
+
             <article>
-                <fieldset>
-                    <div class="form">
-                        <div class="cadastro">
-                            <h2> &#x1F31F; cadastro </h2>
-                        </div>
-                        <br />
+
+               
+                    <div class="form">                    
                         <div class="form-cadastro">
                             <form>
+                                <h2> &#x1F31F; cadastro &#x1F31F; </h2>                       
+                                <br />
                                 <label for="txtNome">Nome completo: </label>
                                 <input type="text" id="txtNome" placeholder="Digite seu nome aqui" size="50" />
                                 <br />
@@ -99,46 +107,35 @@
                                     <input type="button" id="wppButton" value="Nope..." />
                                 </div>
                                 <br />
-
+                                    <div class="descricao-lembrete">
+                                    <p>Seus dados estarão protegidos e tem finalidade exclusiva de cadastro para envios de
+                                        notícias
+                                        via
+                                        e-mail e whatsapp,em conformidade com a Lei nº 13.709 – Lei Geral de Proteção de Dados
+                                        Pessoais
+                                        (LGPD).<br /> Você está de acordo?</p>
+                                    </div>
+                                    <form>
+                                        <input type="radio" name="OpcaoSim" />
+                                        <label for="OpcaoSim">Sim</label>
+        
+                                        <input type="radio" name="OpcaoSim" />
+                                        <label for="OpcaoNao">Não</label>
+                                        <br />
+                                        <br />
+        
+                                        <label for="txtEnviar">Para confirmar seu cadastro clique em enviar e
+                                            bem-vindes a bordo! &#127841;
+                                        </label>
+                                        <br />
+                                        <br />
+                                        <input type="submit" id="txtEnviar" />
+                                    </form>
+                                </div>
                             </form>
                         </div>
                     </div>
-                </fieldset>
-            </article>
-        </section>
-
-        <section>
-            <article>
-                <fieldset>
-                    <div class="lembrete">
-                        <div class="descricao-lembrete">
-                            <p>Seus dados estarão protegidos e tem finalidade exclusiva de cadastro para envios de
-                                notícias
-                                via
-                                e-mail e whatsapp,em conformidade com a Lei nº 13.709 – Lei Geral de Proteção de Dados
-                                Pessoais
-                                (LGPD).<br /> Você está de acordo?</p>
-                        </div>
-                        <div class="form-lembrete">
-                            <form>
-                                <input type="radio" name="OpcaoSim" />
-                                <label for="OpcaoSim">Sim</label>
-
-                                <input type="radio" name="OpcaoSim" />
-                                <label for="OpcaoNao">Não</label>
-                                <br />
-                                <br />
-
-                                <label for="txtEnviar">Para confirmar seu cadastro clique em enviar e
-                                    bem-vindes a bordo! &#127841;
-                                </label>
-                                <br />
-                                <br />
-                                <input type="submit" id="txtEnviar" />
-                            </form>
-                        </div>
-                </fieldset>
-                <br />
+                </div>
             </article>
         </section>
     </main>
@@ -147,9 +144,9 @@
         <nav>
             <div class="button-return">
                 <h4> Quer ler mais notícias ?</h4>
-                <p class="texto-footer">Clique em
+                <p class="texto-footer">
                     <button>
-                        <a href="index.html" title=" Home "><span class="buttons">&#x1F365 Voltar &#x1F365</span> </a>
+                        <a href="index.html" title=" Home "><span class="buttons">&#x1F365 Sim! Volta para a Home   &#x1F365</span> </a>
                     </button>
                 </p>
                 <p class="texto-footer">Essa página foi 100% inspirada no Site Aficionados para fins de prática HTML no
