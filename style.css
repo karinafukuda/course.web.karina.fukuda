@@ -95,9 +95,10 @@ main {
 }
 
 img {
-    display: flex ;
-    padding: 0 28%;
+    padding: 0 26%;
     margin-top: 2px;
+    max-width:100%;
+	height:auto;
 }
 
 .lista-topo ul li {
@@ -153,7 +154,6 @@ tr, td {
 
 .descricao-h2 {
     background: linear-gradient(58deg, rgba(220,134,81,1) 0%, rgba(227,170,89,1) 100%);
-
 }
 
 ul {

@@ -64,7 +64,7 @@ a {
 }
 
 .titulo-page-cadastro {
-    margin:0 ;
+    margin: auto;
     padding: 0 10%;
 }
 
@@ -105,18 +105,20 @@ p , form {
     color: #181630;
     padding: 1rem; 
     margin: -0.5rem;
-    position: relative;   
+    width: 100%;  
 }
 
 .video {
     padding: 8px 32.8%;
-    margin: 2px;
+    margin: auto;
     float: inline-end;
 }
 
 form {
     background: linear-gradient(15deg, rgba(220,134,81,1) 0%, rgba(227,170,89,0.9) 100%);  
-    display: block; 
+    display: block;
+    margin: auto; 
+    border: none;
 }
 
 
@@ -132,6 +134,7 @@ form {
     font-weight: bold;
     font-size: 1em;
     color: #181630;
+    
 }
 
 #acpButton , #wppButton  {
