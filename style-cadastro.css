@@ -42,7 +42,7 @@ h1 {
 
 
 h2 {
-    font-size: 1.75em;
+    font-size: 2.25em;
     color: #f2f4df;
 }
 
@@ -90,6 +90,7 @@ nav ul{
 
 #lista-topo ul li {
     text-decoration: none;
+    font-family:'Noto Sans JP', sans-serif ;
     padding: 1em;
     font-size: 1em;
     font-weight: 400;
@@ -113,15 +114,30 @@ a:hover {
 }
 
 p , form {
-    text-align: left;
+    text-align: center;
     letter-spacing: 0.25px;
     font-style: normal;
     color: #181630;
     font-weight: 700;
     padding: 1rem; 
     margin: -0.5rem;
-    width: 100%;  
+    width: 100%; 
+ 
 }
+
+#form-button {
+    margin: 0 1em;
+    box-shadow: none;
+}
+
+#form input {
+    border: none;
+    border-radius: 4px;
+    box-shadow:  2px 2px 10px #444;
+    padding: 0.5em 1em;
+    font-size: 1em;
+}
+
 
 form {
     background: linear-gradient(180deg, rgba(220,134,81,1) 0%, rgba(227,170,89,1) 75%, rgba(242,244,223,1) 100%);
@@ -131,6 +147,7 @@ form {
     border-style: ridge;
 
 }
+
 
 #form {
     text-align: center;
@@ -174,7 +191,7 @@ footer {
 
 .texto-footer {
     color: #f2f4df;
-    font-size: 0.80em;
+    font-size: 0.9em;
     text-align: center;
     text-indent: -1em;
     margin: 0;
