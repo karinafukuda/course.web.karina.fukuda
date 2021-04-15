@@ -22,27 +22,33 @@ header{
 } 
 
 .titulo-page-cadastro {
-    background: linear-gradient(0deg, rgba(83,105,155,1) 0%, rgba(24,22,48,1) 100%);  
+    background: linear-gradient(0deg, rgba(83,105,155,1) 20%, rgba(24,22,48,1) 80%); 
     margin: 0;
     padding: 0;
 }
 
 h1, h2, h3, h4 {
     text-transform: uppercase;
-    text-shadow: 0.5px 0.5px 1px #181630;
+    text-shadow: 1px 2px 1px #181630;
 } 
 
 h1 {
     color: #f2f4df;
-    font-size: 4em;
+    font-size: 3em;
     text-align: center;
+    padding: 2% 0 0 0 ;
+
 }
 
 
-h2, h3 {
-    font-size: 2em;
+h2 {
+    font-size: 1.75em;
+    color: #f2f4df;
+}
+
+h3 {
+    font-size: 1.25em;
     color: #181630;
-    text-align: center;
 }
 
 h4 {
@@ -69,27 +75,35 @@ a {
 }
 
 nav ul{
-    background: linear-gradient(0deg, rgba(83,105,155,1) 0%, rgba(24,22,48,1) 50%); 
+    background: linear-gradient(60deg, rgba(83,105,155,1) 5%, rgba(24,22,48,1) 20%); 
+    margin: auto;
+    color: #fafafa;
 
 }
 
-.lista-topo ul li {
-    text-decoration: none;
+#lista-topo {
+    margin: 0 2%;
+    padding: 0 1em;
     text-align: center;
+    color: #fafafa;
+}
+
+#lista-topo ul li {
+    text-decoration: none;
+    padding: 1em;
     font-size: 1em;
-    font-weight: bold;
+    font-weight: 400;
     display: inline ;
-    padding-left: 8%; 
-    padding-bottom: 8%;
-    margin-left: 12% ;     
 }
 
 ul {
-    list-style-type: none;  
+    list-style-type: none;
+    color: #fafafa;
+
 }
 
-ul li {
-    color: #53699b;
+a {
+    color: #fafafa;
 }
 
 a:hover {
@@ -103,22 +117,24 @@ p , form {
     letter-spacing: 0.25px;
     font-style: normal;
     color: #181630;
+    font-weight: 700;
     padding: 1rem; 
     margin: -0.5rem;
     width: 100%;  
 }
 
-.video {
-    padding: 8px 32.8%;
-    margin: auto;
-    float: inline-end;
+form {
+    background: linear-gradient(180deg, rgba(220,134,81,1) 0%, rgba(227,170,89,1) 75%, rgba(242,244,223,1) 100%);
+    display: block;
+    margin-top: 1em;
+    border: none;
+    border-style: ridge;
+
 }
 
-form {
-    background: linear-gradient(15deg, rgba(220,134,81,1) 0%, rgba(227,170,89,0.9) 100%);  
-    display: block;
-    margin: auto; 
-    border: none;
+#form {
+    text-align: center;
+    margin:  1% 25%;
 }
 
 
@@ -158,6 +174,9 @@ footer {
 
 .texto-footer {
     color: #f2f4df;
-    font-size: 1.1em;
+    font-size: 0.80em;
     text-align: center;
+    text-indent: -1em;
+    margin: 0;
+    font-weight: 300; 
 }

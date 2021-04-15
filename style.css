@@ -34,9 +34,10 @@ a {
 }
 
 a:hover {
-    color:#dc8651; 
+    color:#53699b; 
     text-decoration:none; 
     cursor:pointer; 
+    transition: all 1s;
 }
 
 .titulo {
@@ -54,9 +55,10 @@ h2 {
 
 h1 {
     color: #f2f4df;
-    font-size: 4em;
+    font-size: 3em;
     text-align: center;
     text-shadow: 2px -1px #181630 ;
+    padding: 2% 0 0 0 ;
 }
 
 h2 {
@@ -64,7 +66,8 @@ h2 {
     font-size: 2em;
     font-weight: 300;
     text-indent: 1em;
-    text-align: center;
+    text-align: left;
+    padding: 1em 0 0 0;
 }
 
 h3 {
@@ -74,11 +77,11 @@ h3 {
 
 h4 {
     color: #181630;
-    font-size: 1.5em;   
+    font-size: 1em;   
 }
 
 main {
-    padding: 0 12%;
+    padding: 0 8%;
     margin: 0;
     margin-top: -28px;
     background-image: url(img/Naruto-pb.jpg) ;
@@ -90,10 +93,6 @@ main {
     padding: 2px 8px 0 8px;
 }
 
-.img-2{
-    margin:  0 33% 0 0 ;
-}
-
 img {
     padding: 0 26%;
     margin-top: 2px;
@@ -101,15 +100,27 @@ img {
 	height:auto;
 }
 
-.lista-topo ul li {
-    text-decoration: none;
-    text-align: center;
+a {
+    color: #fafafa;
+    font-weight: 400;
     font-size: 1em;
-    font-weight: bold;
-    display: inline ;
-    padding-left: 8%; 
-    padding-bottom: 8%;
-    margin-left: 12% ;     
+}
+
+
+
+#lista-topo{
+    margin: 0 ;
+    padding: 0 ;
+    text-align: center;
+    font-weight: 100;
+
+}
+
+#lista-topo ul li {
+    display: inline;
+    color: #fafafa;
+    padding: 1em;
+    
 }
 
 p {
@@ -118,20 +129,8 @@ p {
     font-style: normal;
     color: #181630;
     padding: 12px 60px;
+  
     
-}
-
-.buttons button {
-    text-decoration: none;
-    font-size: 1.5em;
-    color: #181630;
-    padding: 12px;
-    margin: 4px;
-}
-
-.button-cadastro-top {
-    padding: 12px;
-    margin-left: 40%;
 }
 
 .titulo-li, th {  
@@ -142,7 +141,7 @@ p {
     color: #181630;
 }
 
-tr, td {
+tr {
     font-size: 1em;
     color: #181630;
 }
@@ -153,19 +152,53 @@ tr, td {
 }
 
 .descricao-h2 {
-    background: linear-gradient(58deg, rgba(220,134,81,1) 0%, rgba(227,170,89,1) 100%);
+    background: linear-gradient(180deg, rgba(220,134,81,1) 0%, rgba(227,170,89,1) 75%, rgba(242,244,223,1) 100%);
+
 }
 
 ul {
     list-style-type: none;
 }
 
-
-.tabela-personagens {
+#tabela-personagens {
     background-color: #f2f4df;
-    display: table;
+    text-align: center;
+    padding: 0 33% 4% 33%;
+    border: none;
+}
+
+#tabela-personagens caption {
+    border: solid 1px black;
+    background-color: #53699b;
+    border-collapse: collapse;
+
+}
+
+#tabela-personagens thead th {
+    border: solid 1px black;
+
+}
+
+
+#tabela-personagens td  {
     margin-left: 33%;
-    padding: 8px;
+    border-radius: 5%;
+    padding: 0.2em 4em;
+    border: solid 1px black;
+   
+
+}
+
+#tabela-personagens td:hover{
+    background-color: rgb(204, 202, 236);
+    border-radius: 2%;
+    transition: all 0.5s;
+}
+
+#tabela-personagens a{
+    color: #181630;
+    padding: 5em;
+    margin: 2em;
 }
 
 footer {
@@ -177,6 +210,9 @@ footer {
 
 .texto-footer {
     color: #f2f4df;
-    font-size: 1.1em;
+    font-size: 0.80em;
     text-align: center;
+    text-indent: -1em;
+    margin: 0;
+    font-weight: 300; 
 }
