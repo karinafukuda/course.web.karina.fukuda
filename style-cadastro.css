@@ -5,8 +5,8 @@
     --color-header-footer: linear-gradient(0deg, rgba(31,31,38,1) 65%, rgba(20,20,28,1) 83%); 
     --color-nav-ul: linear-gradient(0deg, rgba(31,31,38,1) 0%, rgba(20,20,28,1) 83%);
     --text-shadow-h1-h3: 1px 1px 1px #14141C;
-    --transition-hover: all 1s;
-    
+    --transition-hover: all 1s;  
+    --color-buttons-input-text: #1E1E26;
 }
 
 html , body, form  { 
@@ -88,7 +88,6 @@ li{
 ul {
     list-style-type: none;
     color: #FFFFFF;
-
 }
 
 a {
@@ -97,8 +96,8 @@ a {
 
 a:hover {
     color:#339C9C; 
-    text-decoration:none; 
-    cursor:pointer; 
+    text-decoration: none; 
+    cursor: pointer; 
     transition: var(--transition-hover);
 }
 
@@ -106,13 +105,12 @@ a:hover {
     margin: 0 1em;
 }
 
-#form input {
-    
+#form input {   
     border-radius: 4px;
     padding: 0.5em 1em;
     font-size: 1em;
     color:#1E1E26;
-    background-color:#e8f7f7 ;
+    background-color: #FFFFFF ;
 }
 
 #form input:focus {
@@ -142,9 +140,8 @@ form {
 
 
 .button-return button{
-
     font-size: 1em;
-    color: #181630;
+    color: var(--color-buttons-input-text);
     padding: 2px;
     margin: 8px 0 ;  
 }
@@ -152,31 +149,29 @@ form {
 #txtEnviar {
     font-weight: bold;
     font-size: 1em;
-    color: #181630;
-    
+    color: var(--color-buttons-input-text);  
 }
 
-#acpButton , #wppButton  {
+#acpButton , #wppButton {
     font-weight: 400;
     font-size: 0.90em;
-    color: #181630;
+    color:var(--color-buttons-input-text);
 }
 
 .buttons {
-
     font: small normal 600 2em;
-    color: #181630;
+    color: var(--color-buttons-input-text);
     padding: 12px;
     margin: 4px;
 }
 
 footer {
-    background: linear-gradient(0deg, rgba(31,31,38,1) 65%, rgba(20,20,28,1) 83%);
+    background: var(--color-header-footer);
     text-align: center;
 }
 
 .texto-footer {
-    color: #f2f4df;
+    color: #FFFFFF;
     font-size: 0.9em;
     padding: 1.5em;
     margin: 0;
