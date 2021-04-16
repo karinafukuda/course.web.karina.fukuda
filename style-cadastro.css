@@ -22,7 +22,8 @@ header{
 } 
 
 .titulo-page-cadastro {
-    background: linear-gradient(0deg, rgba(83,105,155,1) 20%, rgba(24,22,48,1) 80%); 
+    background: linear-gradient(0deg, rgba(31,31,38,1) 65%, rgba(20,20,28,1) 83%);
+
     margin: 0;
     padding: 0;
 }
@@ -33,7 +34,7 @@ h1, h2, h3, h4 {
 } 
 
 h1 {
-    color: #f2f4df;
+    color: #339C9C;
     font-size: 3em;
     text-align: center;
     padding: 2% 0 0 0 ;
@@ -75,7 +76,7 @@ a {
 }
 
 nav ul{
-    background: linear-gradient(60deg, rgba(83,105,155,1) 5%, rgba(24,22,48,1) 20%); 
+    background: linear-gradient(0deg, rgba(31,31,38,1) 100%, rgba(20,20,28,1) 93%);
     margin: auto;
     color: #fafafa;
 
@@ -185,7 +186,8 @@ form {
 }
 
 footer {
-    background: linear-gradient(180deg, rgba(83,105,155,1) 50%, rgba(24,22,48,1) 100%); 
+    background: linear-gradient(0deg, rgba(31,31,38,1) 65%, rgba(20,20,28,1) 83%);
+
     text-align: center;
 }
 

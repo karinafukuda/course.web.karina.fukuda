@@ -12,7 +12,7 @@ html , body, ul {
     font-family: 'Noto Sans JP', sans-serif;
     background-color: none;
     font-size: 1em;
-    background-color: #f2f4df;
+    background-color: #FFFFFF;
 }
 
 
@@ -23,56 +23,63 @@ header{
 }
 
 header nav ul{
-    background: linear-gradient(0deg, rgba(83,105,155,1) 0%, rgba(24,22,48,1) 50%); 
+    background: linear-gradient(0deg, rgba(31,31,38,1) 0%, rgba(20,20,28,1) 83%);
+
 }
 
-a {
-    font-weight: bold;
+
+ li a {
     text-decoration: none;
-    color:inherit;
-    
+    color: #FFFFFF;
+    font-weight: 300;
+    font-size: 14px;
+    padding: 0.5em;
+    margin-bottom: 1em;  
 }
 
 a:hover {
-    color: #f2f4df; 
-    text-decoration:none; 
+    color: #339C9C; 
     cursor:pointer; 
-    transition: all 1s;
+    transition: all 1s ;
 }
 
 .titulo {
-    background: linear-gradient(0deg, rgba(83,105,155,1) 0%, rgba(24,22,48,1) 100%);  
+    background: linear-gradient(0deg, rgba(31,31,38,1) 65%, rgba(20,20,28,1) 83%); 
 }
 
 h1, h3 {
     text-transform: uppercase;
+    text-shadow: 1px 1px 1px #000;
+    font-weight: 500;
 }
 
 h2 {
     text-transform: unset;
-    text-shadow: 2px -2px #181630 ;
 }
 
 h1 {
-    color: #f2f4df;
+    color: #339C9C;
     font-size: 3em;
+    font-weight: 700;
     text-align: center;
-    text-shadow: 2px -1px #181630 ;
+    text-shadow: 2px -1px #14141C ;
     padding: 2% 0 0 0 ;
 }
 
 h2 {
-    color: rgba(227, 170, 89) 0.5 ;
-    font-size: 2em;
-    font-weight: 300;
-    text-indent: 1em;
+    font-size: 2.2em;
+    font-weight: 400;
+    text-indent: 1.25em;
     text-align: left;
-    padding: 1em 0 0 0;
+    padding: 0.5em 0 0 0;
+    margin: 0.8em 0;
 }
 
 h3 {
-    color: #53699b;
-    text-shadow: 1px 1px #181630 ;
+    color: #1E1E26;
+    font-size: 1.25em;
+    margin: 0;
+    padding: 0.25em 1em;
 }
 
 h4 {
@@ -81,7 +88,7 @@ h4 {
 }
 
 main {
-    padding: 0 8%;
+    padding: 0 6%;
     margin: 0;
     margin-top: -28px;
     background-image: url(img/Naruto-pb.jpg) ;
@@ -96,17 +103,21 @@ main {
 img {
     padding: 0 28.7%;
     margin-top: 2px;
-    max-width:100%;
+    max-width:70%;
 	height:auto;
     box-shadow:  2px 2px 10px #444;
 }
 
 a {
-    color: #a2b8eb;
-    font-weight: 400;
+    color: #1E1E26;
+    font-weight: bold;
+    text-decoration: none ;
     font-size: 1em;
 }
 
+#poster-anime {
+    align-items:initial;
+}
 
 #lista-topo{
     margin: 0 ;
@@ -125,10 +136,10 @@ a {
 
 p {
     text-align: left;
-    letter-spacing: 0.25px;
+    letter-spacing: 0.15px;
     font-style: normal;
-    color: #181630;
-    padding: 12px 60px;
+    color: #1E1E26;
+    padding: 1.5em 5em;
   
     
 }
@@ -147,12 +158,12 @@ tr {
 }
 
 .titulo-h2 {
-    color:#f2f4df; 
-    font-weight: 500;
+    color:#14141C; 
+    font-weight: 600;
 }
 
 .descricao-h2 {
-    background: linear-gradient(180deg, rgba(220,134,81,1) 0%, rgba(227,170,89,1) 75%, rgba(242,244,223,1) 100%);
+    background: linear-gradient(180deg, rgba(51,156,156,1) 8%, rgba(59,180,180,1) 38%, rgba(255,255,255,1) 64%);
 
 }
 
@@ -161,46 +172,59 @@ ul {
 }
 
 #tabela-personagens {
-    background-color: #f2f4df;
+    background-color: #FFFFFF;
     text-align: center;
-    padding: 0 53% 4% 15%;
+    padding: 1% 5% 4% 5%;
     border: none;
+    margin: 0;
+
 }
 
 #tabela-personagens caption {
-    background-color: #53699b;
-    box-shadow:  2px 2px 10px #444;
+    background-color: #FFFFFF;
+    box-shadow:  2px 2px 10px #1E1E26;
+    border-radius: 4px;
+    font-size: 1.5em;
+
 }
 
 #tabela-personagens thead th {
-    background-color: #a0a5b1 ;
-    box-shadow:  2px 2px 10px #444;
-
+    background-color: #a3dfdf;
+    box-shadow:  1px 1px 3px #14141C;
+    border-radius: 4px;
+    font-size: 1em;
 }
 
 #tabela-personagens td  {
-    border-radius: 5%;
-    padding: 0.2em 4em;
+    border-radius: 4px;
+    padding: 0.3em 6em;
     border: none;
     box-shadow:  2px 2px 10px #444;
-    background: linear-gradient(0deg, rgba(220,134,81,1) 15%, rgba(227,170,89,1)25%, rgba(242,244,223,1) 100%); 
+    background: rgb(218, 216, 216);
+    font-size: 1.2em;
 
 }
 
 #tabela-personagens td:hover{
-    background-color: rgb(204, 202, 236);
-    border-radius: 2%;
-    transition: all 0.5s;
+    background-color: rgb(155, 214, 211);
+    border-radius: 2px;
+    transition: all 1s;
 }
 
 #tabela-personagens a{
-    color: #181630;
+    color: #14141C;
     padding: 5em;
     margin: 2em;
 }
 
+#img-tabela {
+    box-shadow: none;
+    margin: 0;
+    padding: 0 1%;
+}
+
 footer {
-    background: linear-gradient(180deg, rgba(83,105,155,1) 50%, rgba(24,22,48,1) 100%); 
+    background: linear-gradient(0deg, rgba(31,31,38,1) 65%, rgba(20,20,28,1) 83%);
     text-align: center;
     margin: -24px 0 0 0;
     padding-bottom: 0;
