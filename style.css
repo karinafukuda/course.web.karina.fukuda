@@ -1,32 +1,35 @@
-/*Cores:
-#dc8651 - Laranja Escuro
-#e3aa59 - Laranja Médio
-#f2f4df - Creme
-#53699b - Azul Médio
-#181630 - Azul Escuro
-*/
+:root {
+    --image-bg: url(img/Naruto-pb.jpg);
+    --color-bg: linear-gradient(180deg, rgba(51,156,156,1) 8%, rgba(59,180,180,1) 38%, rgba(255,255,255,1) 64%);
+    --color-table-bg: #FFFFFF;
+    --color-nav-ul: linear-gradient(0deg, rgba(31,31,38,1) 0%, rgba(20,20,28,1) 83%);
+    --color-header-footer: linear-gradient(0deg, rgba(31,31,38,1) 65%, rgba(20,20,28,1) 83%); 
+    --font-family: 'Noto Sans JP', sans-serif;
+    --color-a-hover: #339C9C;
+    --text-shadow-h1-h3: 1px 1px 1px #14141C;
+    --color-td-hover-bg: rgb(155, 214, 211);
+    --color-box-shadow-all: 2px 2px 10px #1E1E26;
+    --border-radius: 4px;  
+    --transition-td-hover: all 1s;
+}
 
 html , body, ul {
     margin: 0;
     padding: 0;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: var( --font-family);
     background-color: none;
     font-size: 1em;
     background-color: #FFFFFF;
 }
 
-
 header{
     margin-top: -45px;
     padding: 0;
-
 }
 
 header nav ul{
-    background: linear-gradient(0deg, rgba(31,31,38,1) 0%, rgba(20,20,28,1) 83%);
-
+    background: var(--color-nav-ul);
 }
-
 
  li a {
     text-decoration: none;
@@ -38,18 +41,18 @@ header nav ul{
 }
 
 a:hover {
-    color: #339C9C; 
+    color: var(--color-a-hover); 
     cursor:pointer; 
     transition: all 1s ;
 }
 
 .titulo {
-    background: linear-gradient(0deg, rgba(31,31,38,1) 65%, rgba(20,20,28,1) 83%); 
+    background: var(--color-header-footer); 
 }
 
 h1, h3 {
     text-transform: uppercase;
-    text-shadow: 1px 1px 1px #000;
+    text-shadow: var(--text-shadow-h1-h3);
     font-weight: 500;
 }
 
@@ -62,7 +65,6 @@ h1 {
     font-size: 3em;
     font-weight: 700;
     text-align: center;
-    text-shadow: 2px -1px #14141C ;
     padding: 2% 0 0 0 ;
 }
 
@@ -82,16 +84,11 @@ h3 {
     padding: 0.25em 1em;
 }
 
-h4 {
-    color: #181630;
-    font-size: 1em;   
-}
-
 main {
     padding: 0 6%;
     margin: 0;
     margin-top: -28px;
-    background-image: url(img/Naruto-pb.jpg) ;
+    background-image: var(--image-bg);
 }
 
 .subtitulo-home {
@@ -105,7 +102,7 @@ img {
     margin-top: 2px;
     max-width:70%;
 	height:auto;
-    box-shadow:  2px 2px 10px #444;
+    box-shadow: var(--color-box-shadow-all);
 }
 
 a {
@@ -116,7 +113,7 @@ a {
 }
 
 #poster-anime {
-    align-items:initial;
+    align-items: initial;
 }
 
 #lista-topo{
@@ -124,14 +121,12 @@ a {
     padding: 0 ;
     text-align: center;
     font-weight: 100;
-
 }
 
 #lista-topo ul li {
     display: inline;
-    color: #fafafa;
-    padding: 1em;
-    
+    color: #FFFFFF;
+    padding: 1em;   
 }
 
 p {
@@ -139,21 +134,11 @@ p {
     letter-spacing: 0.15px;
     font-style: normal;
     color: #1E1E26;
-    padding: 1.5em 5em;
-  
-    
-}
-
-.titulo-li, th {  
-    text-decoration: none;
-    font-style: normal;
-    font-size: 1.25em;
-    font-weight: bold;
-    color: #181630;
+    padding: 1.5em 5em;  
 }
 
 tr {
-    font-size: 1em;
+    font-size: 0.9em;
     color: #181630;
 }
 
@@ -163,8 +148,7 @@ tr {
 }
 
 .descricao-h2 {
-    background: linear-gradient(180deg, rgba(51,156,156,1) 8%, rgba(59,180,180,1) 38%, rgba(255,255,255,1) 64%);
-
+    background: var(--color-bg);
 }
 
 ul {
@@ -172,18 +156,16 @@ ul {
 }
 
 #tabela-personagens {
-    background-color: #FFFFFF;
+    background-color: var(--color-table-bg);
     text-align: center;
     padding: 1% 5% 4% 5%;
     border: none;
     margin: 0;
-
 }
 
 #tabela-personagens caption {
-    background-color: #FFFFFF;
-    box-shadow:  2px 2px 10px #1E1E26;
-    border-radius: 4px;
+    box-shadow: var(--color-box-shadow-all);
+    border-radius: var(--border-radius);
     font-size: 1.5em;
 
 }
@@ -191,24 +173,23 @@ ul {
 #tabela-personagens thead th {
     background-color: #a3dfdf;
     box-shadow:  1px 1px 3px #14141C;
-    border-radius: 4px;
+    border-radius: var(--border-radius);
     font-size: 1em;
 }
 
 #tabela-personagens td  {
-    border-radius: 4px;
+    border-radius: var(--border-radius);
     padding: 0.3em 6em;
     border: none;
-    box-shadow:  2px 2px 10px #444;
-    background: rgb(218, 216, 216);
+    box-shadow:  var(--color-box-shadow-all);
+    background: rgb(214, 234, 236);
     font-size: 1.2em;
-
 }
 
 #tabela-personagens td:hover{
-    background-color: rgb(155, 214, 211);
-    border-radius: 2px;
-    transition: all 1s;
+    background-color: var(--color-td-hover-bg);
+    border-radius: var(--border-radius);
+    transition: var(--transition-td-hover);
 }
 
 #tabela-personagens a{
@@ -224,7 +205,7 @@ ul {
 }
 
 footer {
-    background: linear-gradient(0deg, rgba(31,31,38,1) 65%, rgba(20,20,28,1) 83%);
+    background: var(--color-header-footer);
     text-align: center;
     margin: -24px 0 0 0;
     padding-bottom: 0;
