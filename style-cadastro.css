@@ -3,6 +3,7 @@
     --font-family: 'Noto Sans JP', sans-serif;
     --color-form: linear-gradient(180deg, rgba(51,156,156,1) 8%, rgba(59,180,180,1) 38%, rgba(255,255,255,1) 64%);  
     --color-header-footer: linear-gradient(0deg, rgba(31,31,38,1) 65%, rgba(20,20,28,1) 83%); 
+    --color-nav-ul: linear-gradient(0deg, rgba(31,31,38,1) 0%, rgba(20,20,28,1) 83%);
     --text-shadow-h1-h3: 1px 1px 1px #14141C;
     --transition-hover: all 1s;
     
@@ -49,11 +50,6 @@ h3 {
     color: #14141C;
 }
 
-.texto-topo {
-    padding: 4px 20px;
-    margin: 0;
-}
-
 a {
     text-decoration: none;
 }
@@ -64,35 +60,35 @@ a {
 
 .titulo-page-cadastro {
     margin: auto;
-    padding: 0 10%;
+    padding: 0.25% 0;
 }
 
 nav ul{
-    background:var(--color-bg);
+    background:var(--color-nav-ul);
     margin: auto;
     color: #FFFFFF;
-
 }
 
 #lista-topo {
-    margin: 0 2%;
-    padding: 0 1em;
     text-align: center;
-    color: #FFFFFF;
+    font-weight: 300;
+    font-size: 1.1em;
 }
 
-#lista-topo ul li {
-    text-decoration: none;
-    font-family:'Noto Sans JP', sans-serif ;
-    padding: 1em;
-    font-size: 1em;
-    font-weight: 400;
-    display: inline ;
+#lista-topo nav ul  {  
+    font-family: var(--font-family) ;
+    font-weight: 300;  
+}
+
+li{
+    display: inline-block ;
+    padding: 0 2.7em;
 }
 
 ul {
     list-style-type: none;
     color: #FFFFFF;
+
 }
 
 a {

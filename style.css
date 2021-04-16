@@ -31,13 +31,13 @@ header nav ul{
     background: var(--color-nav-ul);
 }
 
- li a {
+li a {
     text-decoration: none;
     color: #FFFFFF;
     font-weight: 300;
-    font-size: 14px;
-    padding: 0.5em;
-    margin-bottom: 1em;  
+    font-size: 1em;
+    padding: 0 1%;
+    margin: 0 1%;  
 }
 
 a:hover {
@@ -121,12 +121,13 @@ a {
     padding: 0 ;
     text-align: center;
     font-weight: 100;
+    font-size: 1em;
 }
 
 #lista-topo ul li {
     display: inline;
     color: #FFFFFF;
-    padding: 1em;   
+    padding: 0 1.5em;   
 }
 
 p {
@@ -212,7 +213,7 @@ footer {
 }
 
 .texto-footer {
-    color: #f2f4df;
+    color: #FFFFFF;
     font-size: 0.80em;
     text-align: center;
     text-indent: -1em;
