@@ -1,34 +1,49 @@
 :root {
-    --image-bg: url(img/Naruto-pb.jpg);
+    --font-family: 'Noto Sans JP', sans-serif;
+    --text-shadow-h1-h3: 1px 1px 1px #14141C;
     --color-bg: linear-gradient(180deg, rgba(51,156,156,1) 8%, rgba(59,180,180,1) 38%, rgba(255,255,255,1) 64%);
     --color-table-bg: #FFFFFF;
     --color-nav-ul: linear-gradient(0deg, rgba(31,31,38,1) 0%, rgba(20,20,28,1) 83%);
     --color-header-footer: linear-gradient(0deg, rgba(31,31,38,1) 65%, rgba(20,20,28,1) 83%); 
-    --font-family: 'Noto Sans JP', sans-serif;
     --color-a-hover: #339C9C;
-    --text-shadow-h1-h3: 1px 1px 1px #14141C;
     --color-td-hover-bg: rgb(155, 214, 211);
     --color-box-shadow-all: 2px 2px 10px #1E1E26;
     --border-radius: 4px;  
     --transition-td-hover: all 1s;
 }
 
-html , body, ul {
+html , body {
     margin: 0;
     padding: 0;
-    font-family: var( --font-family);
-    background-color: none;
+    font-family: var( --font-family); 
     font-size: 1em;
-    background-color: #FFFFFF;
+    background: linear-gradient(360deg, rgba(236,245,245,1) 0%, rgba(255,255,255,1) 100%);
 }
 
-header{
+header {
     margin-top: -45px;
     padding: 0;
+    display: flex;
+    justify-content: center;   
 }
 
-header nav ul{
-    background: var(--color-nav-ul);
+.titulo {
+    background: var(--color-header-footer);
+    justify-content: center; 
+}
+
+#lista-topo {
+    margin: 0 ;
+    padding: 0 ;
+    text-align: center;
+    font-weight: 100;
+    font-size: 1em;
+    justify-content: center;
+}
+
+#lista-topo ul li {
+    display: inline;  
+    padding: 1em 1.5em;   
 }
 
 li a {
@@ -36,18 +51,30 @@ li a {
     color: #FFFFFF;
     font-weight: 300;
     font-size: 1em;
-    padding: 0 1%;
-    margin: 0 1%;  
+ 
+}
+
+header nav ul{
+    background: var(--color-nav-ul);
+    padding: 1% 0;
+    margin: 0 1%; 
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: #1E1E26;
+    font-weight: bold;
+    text-decoration: none ;
+    font-size: 1em;
 }
 
 a:hover {
     color: var(--color-a-hover); 
     cursor:pointer; 
     transition: all 1s ;
-}
-
-.titulo {
-    background: var(--color-header-footer); 
 }
 
 h1, h3 {
@@ -65,7 +92,10 @@ h1 {
     font-size: 3em;
     font-weight: 700;
     text-align: center;
-    padding: 2% 0 0 0 ;
+    padding: 1em 13em ;
+    margin: 0 ;
+    display:inline-flex;
+    height: max-content;
 }
 
 h2 {
@@ -74,21 +104,21 @@ h2 {
     text-indent: 1.25em;
     text-align: left;
     padding: 0.5em 0 0 0;
-    margin: 0.8em 0;
+    margin: 0.6em 0;
 }
 
 h3 {
     color: #1E1E26;
     font-size: 1.25em;
-    margin: 0;
-    padding: 0.25em 1em;
+    margin: 0 2em;
+    padding: 0;
+    text-align: left;
 }
 
 main {
-    padding: 0 6%;
+    padding: 0 ;
     margin: 0;
     margin-top: -28px;
-    background-image: var(--image-bg);
 }
 
 .subtitulo-home {
@@ -96,46 +126,38 @@ main {
     font-size: 1.25em;
     padding: 2px 8px 0 8px;
 }
-
 img {
-    padding: 0 28.7%;
-    margin-top: 2px;
-    max-width:70%;
-	height:auto;
-    box-shadow: var(--color-box-shadow-all);
+   box-shadow: var(--color-box-shadow-all);
+   border-radius: 4px;
+} 
+
+figure {
+    float: left;
+    justify-content:flex-start;
+    margin: 0 2x 2px 0;
 }
 
-a {
-    color: #1E1E26;
-    font-weight: bold;
-    text-decoration: none ;
-    font-size: 1em;
+.titulo-h2 p {
+    padding: 1em 10em;
+    margin: 0;
+    text-indent: 1.5em;
+    display: flex;
+    text-align: justify;
 }
 
-#poster-anime {
-    align-items: initial;
+.content {
+    margin: 1em 2em;
+    display:inline-block;
 }
 
-#lista-topo{
-    margin: 0 ;
-    padding: 0 ;
-    text-align: center;
-    font-weight: 100;
-    font-size: 1em;
-}
-
-#lista-topo ul li {
-    display: inline;
-    color: #FFFFFF;
-    padding: 0 1.5em;   
-}
-
-p {
-    text-align: left;
-    letter-spacing: 0.15px;
+.content p {
+    text-align: justify;
+    /* letter-spacing: 0.1px; */
     font-style: normal;
     color: #1E1E26;
-    padding: 1.5em 5em;  
+    padding:  0.5em 1em ; 
+    display: flex; 
+    text-indent: 1.5em;
 }
 
 tr {
@@ -150,11 +172,10 @@ tr {
 
 .descricao-h2 {
     background: var(--color-bg);
+    padding: 1em 8em;
 }
 
-ul {
-    list-style-type: none;
-}
+
 
 #tabela-personagens {
     background-color: var(--color-table-bg);
