@@ -21,7 +21,7 @@ html , body {
 }
 
 header {
-    margin-top: -45px;
+    margin-top: -35px;
     padding: 0;
     display: flex;
     justify-content: center;   
@@ -51,7 +51,6 @@ li a {
     color: #FFFFFF;
     font-weight: 300;
     font-size: 1em;
- 
 }
 
 header nav ul{
@@ -75,6 +74,7 @@ a:hover {
     color: var(--color-a-hover); 
     cursor:pointer; 
     transition: all 1s ;
+    font-weight: 600;
 }
 
 h1, h3 {
@@ -110,7 +110,7 @@ h2 {
 h3 {
     color: #1E1E26;
     font-size: 1.25em;
-    margin: 0 2em;
+    margin: 1.2em 2.5em -0.5em 2.7em;
     padding: 0;
     text-align: left;
 }
@@ -129,12 +129,20 @@ main {
 img {
    box-shadow: var(--color-box-shadow-all);
    border-radius: 4px;
+   max-width: 100%;
 } 
 
 figure {
     float: left;
     justify-content:flex-start;
     margin: 0 2x 2px 0;
+}
+
+.content:hover img {
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+    transition: all 1s;
 }
 
 .titulo-h2 p {
@@ -152,7 +160,6 @@ figure {
 
 .content p {
     text-align: justify;
-    /* letter-spacing: 0.1px; */
     font-style: normal;
     color: #1E1E26;
     padding:  0.5em 1em ; 
@@ -173,23 +180,21 @@ tr {
 .descricao-h2 {
     background: var(--color-bg);
     padding: 1em 8em;
+    text-align: justify;
 }
-
-
 
 #tabela-personagens {
     background-color: var(--color-table-bg);
     text-align: center;
     padding: 1% 5% 4% 5%;
     border: none;
-    margin: 0;
+    margin: 0 20%;
 }
 
 #tabela-personagens caption {
     box-shadow: var(--color-box-shadow-all);
     border-radius: var(--border-radius);
     font-size: 1.5em;
-
 }
 
 #tabela-personagens thead th {
@@ -216,8 +221,12 @@ tr {
 
 #tabela-personagens a{
     color: #14141C;
-    padding: 5em;
-    margin: 2em;
+    padding: 1em;
+}
+
+#tabela-personagens p {
+    text-align: justify;
+    padding: 0 9%;
 }
 
 #img-tabela {
@@ -239,5 +248,6 @@ footer {
     text-align: center;
     text-indent: -1em;
     margin: 0;
+    padding: 1em;
     font-weight: 300; 
 }
