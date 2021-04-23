@@ -22,7 +22,7 @@ html , body {
 
 header {
     margin-top: -35px;
-    padding: 0;
+    padding: 0 25em;
     display: flex;
     justify-content: center;   
 }
@@ -73,8 +73,8 @@ a {
 a:hover {
     color: var(--color-a-hover); 
     cursor:pointer; 
-    transition: all 1s ;
-    font-weight: 600;
+    transition: all 0.8s ;
+    font-weight: 380;
 }
 
 h1, h3 {
@@ -91,10 +91,11 @@ h1 {
     color: #339C9C;
     font-size: 3em;
     font-weight: 700;
+    font-family: URW Chancery L, cursive;
     text-align: center;
-    padding: 1em 13em ;
+    padding: 1em 13em 0.3em 13em;
     margin: 0 ;
-    display:inline-flex;
+    display:inline-block;
     height: max-content;
 }
 
@@ -139,9 +140,9 @@ figure {
 }
 
 .content:hover img {
-	-moz-transform: scale(1.1);
-	-webkit-transform: scale(1.1);
-	transform: scale(1.1);
+	-moz-transform: scale(1.05);
+	-webkit-transform: scale(1.05);
+	transform: scale(1.05);
     transition: all 1s;
 }
 
@@ -189,6 +190,7 @@ tr {
     padding: 1% 5% 4% 5%;
     border: none;
     margin: 0 20%;
+    max-width: 70% ;
 }
 
 #tabela-personagens caption {
@@ -226,13 +228,13 @@ tr {
 
 #tabela-personagens p {
     text-align: justify;
-    padding: 0 9%;
+    padding: 0 9.5%;
 }
 
 #img-tabela {
     box-shadow: none;
     margin: 0;
-    padding: 0 1%;
+    padding: 0;
 }
 
 footer {
