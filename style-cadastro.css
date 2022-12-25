@@ -18,8 +18,7 @@ html , body, form  {
 }
 
 header{
-    margin-top: -44px;
-    padding: 0;
+    width: 100%;
 } 
 
 .titulo-page-cadastro {
@@ -62,18 +61,25 @@ a {
 .titulo-page-cadastro {
     margin: auto;
     padding: 0.25% 0;
+    width: 100%;
+}
+
+nav{
+    width: 100%;
 }
 
 nav ul{
     background:var(--color-nav-ul);
     margin: auto;
     color: #FFFFFF;
+    padding: 1em;
+    
 }
 
 #lista-topo {
-    text-align: center;
     font-weight: 300;
     font-size: 1.1em;
+    padding: auto;
 }
 
 #lista-topo nav ul  {  
@@ -81,18 +87,42 @@ nav ul{
     font-weight: 300;  
 }
 
+li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 300;
+    font-size: 1.3em;
+}
+
+a {
+    color: #3232d7;
+    font-weight: bold;
+    text-decoration: none ;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+a:hover {
+    color: var(--color-a-hover); 
+    cursor: pointer ; 
+    transition: all 0.8s ;
+    font-weight: 380;
+}
+
 li{
-    display: inline-block ;
-    padding: 0 2.7em;
+    padding: 1em;
 }
 
 ul {
     list-style-type: none;
     color: #FFFFFF;
-}
-
-a {
-    color: #FFFFFF;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    align-items: center;
+    flex-direction:row;
+    padding: 0;
 }
 
 a:hover {
@@ -137,6 +167,9 @@ form {
 #form {
     text-align: center;
     margin:  1% 25%;
+    display: flex ;
+    align-items: center;
+    flex-direction: column;
 }
 
 
@@ -164,6 +197,14 @@ form {
     color: var(--color-buttons-input-text);
     padding: 12px;
     margin: 4px;
+}
+
+#txtEnviar:hover, 
+#acpButton:hover , 
+#wppButton:hover {
+    background-color: #88b7f0;
+    transition: 1s;
+    cursor: pointer;
 }
 
 footer {
