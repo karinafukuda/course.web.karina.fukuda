@@ -20,43 +20,51 @@ html , body {
     background: linear-gradient(360deg, rgba(236,245,245,1) 0%, rgba(255,255,255,1) 100%);
 }
 
-header {
-    margin-top: -35px;
-    padding: 0 25em;
-    display: flex;
-    justify-content: center;   
-}
-
-.titulo {
+header{
     background: var(--color-header-footer);
-    justify-content: center; 
 }
 
 #lista-topo {
     margin: 0 ;
     padding: 0 ;
-    text-align: center;
     font-weight: 100;
     font-size: 1em;
     justify-content: center;
+    width: 100%;
 }
+
+nav{
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    color: #FFFFFF;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    align-items: center;
+    flex-direction:row;
+    padding: 0;
+}
+
 
 #lista-topo ul li {
     display: inline;  
-    padding: 1em 1.5em;   
+    padding: 1em;   
 }
 
 li a {
     text-decoration: none;
     color: #FFFFFF;
     font-weight: 300;
-    font-size: 1em;
+    font-size: 1.3em;
 }
 
 header nav ul{
     background: var(--color-nav-ul);
     padding: 1% 0;
-    margin: 0 1%; 
 }
 
 ul {
@@ -64,15 +72,16 @@ ul {
 }
 
 a {
-    color: #1E1E26;
+    color: #3232d7;
     font-weight: bold;
     text-decoration: none ;
     font-size: 1em;
+    cursor: pointer;
 }
 
 a:hover {
     color: var(--color-a-hover); 
-    cursor:pointer; 
+    cursor: pointer ; 
     transition: all 0.8s ;
     font-weight: 380;
 }
@@ -83,20 +92,14 @@ h1, h3 {
     font-weight: 500;
 }
 
-h2 {
-    text-transform: unset;
-}
-
 h1 {
     color: #339C9C;
     font-size: 3em;
-    font-weight: 700;
-    font-family: URW Chancery L, cursive;
     text-align: center;
-    padding: 1em 13em 0.3em 13em;
-    margin: 0 ;
-    display:inline-block;
-    height: max-content;
+    padding: 5% 0 0 0 ;
+    font-family: URW Chancery L, cursive;
+    background: var(--color-header-footer);
+    margin-top: 0;
 }
 
 h2 {
@@ -106,6 +109,7 @@ h2 {
     text-align: left;
     padding: 0.5em 0 0 0;
     margin: 0.6em 0;
+    text-transform: unset;
 }
 
 h3 {
@@ -119,7 +123,7 @@ h3 {
 main {
     padding: 0 ;
     margin: 0;
-    margin-top: -28px;
+    margin-top: -1em;
 }
 
 .subtitulo-home {
@@ -137,6 +141,12 @@ figure {
     float: left;
     justify-content:flex-start;
     margin: 0 2x 2px 0;
+}
+
+.link-site:hover{
+    color: #181630;
+    font-size: 1em;
+    font-weight: 600;
 }
 
 .content:hover img {
@@ -187,10 +197,13 @@ tr {
 #tabela-personagens {
     background-color: var(--color-table-bg);
     text-align: center;
-    padding: 1% 5% 4% 5%;
+    padding: 1% 2% 5% 2%;
     border: none;
-    margin: 0 20%;
-    max-width: 70% ;
+    margin: 3% ;
+    max-width: 100% ;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 #tabela-personagens caption {
@@ -203,12 +216,13 @@ tr {
     background-color: #a3dfdf;
     box-shadow:  1px 1px 3px #14141C;
     border-radius: var(--border-radius);
-    font-size: 1em;
+    font-size: 1.4em;
+    padding: .5em 3.5em;
 }
 
 #tabela-personagens td  {
     border-radius: var(--border-radius);
-    padding: 0.3em 6em;
+    padding: 0.15em 3em;
     border: none;
     box-shadow:  var(--color-box-shadow-all);
     background: rgb(214, 234, 236);
@@ -231,10 +245,8 @@ tr {
     padding: 0 9.5%;
 }
 
-#img-tabela {
-    box-shadow: none;
-    margin: 0;
-    padding: 0;
+.section-bottom {
+    width: 100%;
 }
 
 footer {
@@ -249,7 +261,7 @@ footer {
     font-size: 0.80em;
     text-align: center;
     text-indent: -1em;
-    margin: 0;
-    padding: 1em;
+    margin: .5rem;
+    padding: 1.5em;
     font-weight: 300; 
 }
