@@ -55,9 +55,6 @@ a {
     text-decoration: none;
 }
 
-.form {
-    padding: 0 33%;   
-}
 
 .titulo-page-cadastro {
     margin: auto;
@@ -140,7 +137,12 @@ a:hover {
     padding: 0.5em 1em;
     font-size: 1em;
     color:#1E1E26;
-    background-color: #FFFFFF ;
+    background-color: #FFFFFF;
+}
+
+#txtNome,
+#txtEmail {
+    max-width: 70%;
 }
 
 #form input:focus {
@@ -157,7 +159,7 @@ form {
     font-style: normal;
     color: #1E1E26;
     font-weight: 500;
-    width: fit-content;
+    min-width: 70%;
     display: flex ;
     align-items: center;
     flex-direction: column;
