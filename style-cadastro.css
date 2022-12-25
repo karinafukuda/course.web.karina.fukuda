@@ -25,6 +25,7 @@ header{
     background: var(--color-header-footer);
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
 h1, h2, h3 {
@@ -36,7 +37,7 @@ h1 {
     color: #339C9C;
     font-size: 3em;
     text-align: center;
-    padding: 2% 0 0 0 ;
+    padding: 2% 5%;
     font-family: URW Chancery L, cursive;
 }
 
@@ -72,14 +73,13 @@ nav ul{
     background:var(--color-nav-ul);
     margin: auto;
     color: #FFFFFF;
-    padding: 1em;
+    padding: 1em 0;
     
 }
 
 #lista-topo {
     font-weight: 300;
     font-size: 1.1em;
-    padding: auto;
 }
 
 #lista-topo nav ul  {  
@@ -122,7 +122,6 @@ ul {
     align-content: space-between;
     align-items: center;
     flex-direction:row;
-    padding: 0;
 }
 
 a:hover {
@@ -152,38 +151,30 @@ a:hover {
 
 form {
     background: var(--color-form);
-    margin-top: 1em;
     border-style: ridge;
     text-align: center;
     letter-spacing: 0.25px;
     font-style: normal;
     color: #1E1E26;
-    font-weight: 700;
-    padding: 1rem; 
-    margin: -0.5rem;
-    width: 100%; 
-}
-
-#form {
-    text-align: center;
-    margin:  1% 25%;
+    font-weight: 500;
+    width: fit-content;
     display: flex ;
     align-items: center;
     flex-direction: column;
+    margin: 2%;
 }
-
 
 .button-return button{
     font-size: 1em;
     color: var(--color-buttons-input-text);
     padding: 2px;
-    margin: 8px 0 ;  
+    margin: 8px 0;  
 }
 
 #txtEnviar {
     font-weight: bold;
     font-size: 1em;
-    color: var(--color-buttons-input-text);  
+    color: var(--color-buttons-input-text); 
 }
 
 #acpButton , #wppButton {
@@ -210,12 +201,20 @@ form {
 footer {
     background: var(--color-header-footer);
     text-align: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
 }
 
 .texto-footer {
     color: #FFFFFF;
     font-size: 0.9em;
     padding: 1.5em;
-    margin: 0;
+    margin: 0 auto;
     font-weight: 300; 
+    text-align: center;
+}
+
+.txt-labels{
+    margin: 0 1rem;
 }
